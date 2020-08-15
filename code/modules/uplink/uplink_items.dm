@@ -460,6 +460,14 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	surplus = 40
 	include_modes = list(/datum/game_mode/nuclear)
 
+/datum/uplink_item/dangerous/uzi
+	name = "SAF-12"
+	desc = "An automatic and compact SMG designed by Frozen Star for CQC engangements. Has a threaded barrel for a suppressor and uses 9mm."
+	item = /obj/item/gun/ballistic/automatic/mini_uzi
+	cost = 12
+	surplus = 40
+	exclude_modes = list(/datum/game_mode/nuclear, /datum/game_mode/nuclear/clown_ops)
+
 /datum/uplink_item/dangerous/smg
 	name = "C-20r Submachine Gun"
 	desc = "A fully-loaded Scarborough Arms bullpup submachine gun. The C-20r fires .45 rounds with a \
@@ -768,6 +776,13 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 /datum/uplink_item/ammo
 	category = "Ammunition"
 	surplus = 40
+
+/datum/uplink_item/ammo/uzi
+	name = "9mm SMG Magazine."
+	desc = "An additional 9mm magazine for the SAF-12."
+	item = /obj/item/ammo_box/magazine/uzim9mm
+	cost = 2
+	exclude_modes = list(/datum/game_mode/nuclear, /datum/game_mode/nuclear/clown_ops)
 
 /datum/uplink_item/ammo/pistol
 	name = "10mm Handgun Magazine"

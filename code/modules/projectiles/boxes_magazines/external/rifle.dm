@@ -20,3 +20,18 @@
 	caliber = "a556"
 	max_ammo = 30
 	multiple_sprites = 2
+
+/obj/item/ammo_box/magazine/m556/rifle
+	name = "rifle magazine (5.56mm)"
+	desc = "A sleek magazine chambered in 5.56."
+	icon_state = "75-30"
+	ammo_type = /obj/item/ammo_casing/a556
+	caliber = "a556"
+	max_ammo = 25
+
+/obj/item/ammo_box/magazine/m556/rifle/update_icon()
+	..()
+	if(ammo_count())
+		icon_state = "75-30"
+	else
+		icon_state = "75-0"

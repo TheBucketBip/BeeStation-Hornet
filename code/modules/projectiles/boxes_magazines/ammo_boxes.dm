@@ -88,3 +88,10 @@
 	icon_state = "foambox_riot"
 	ammo_type = /obj/item/ammo_casing/caseless/foam_dart/riot
 	materials = list(/datum/material/iron = 50000)
+
+/obj/item/ammo_box/a556
+	name = "ammo box (5.56)"
+	icon_state = "10mmbox"
+	ammo_type = /obj/item/ammo_casing/a556
+	max_ammo = 100
+	materials = list(/datum/material/iron = 50000)

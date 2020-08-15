@@ -59,7 +59,7 @@
 
 /obj/item/gun/ballistic/automatic/c20r
 	name = "\improper C-20r SMG"
-	desc = "A bullpup two-round burst .45 SMG, designated 'C-20r'. Has a 'Scarborough Arms - Per falcis, per pravitas' buttstamp."
+	desc = "A bullpup two-round burst .45 SMG, designated 'C-20r'. Has a 'KTF - Kill them first.' buttstamp."
 	icon_state = "c20r"
 	item_state = "c20r"
 	mag_type = /obj/item/ammo_box/magazine/smgm45
@@ -82,8 +82,8 @@
 	update_icon()
 
 /obj/item/gun/ballistic/automatic/wt550
-	name = "security auto rifle"
-	desc = "An outdated personal defence weapon. Uses 4.6x30mm rounds and is designated the WT-550 Automatic Rifle."
+	name = "security auto-rifle"
+	desc = "An outdated personal defence weapon produced by KTF. Uses 4.6x30mm rounds and is designated the KTF WT-550 Automatic Rifle."
 	icon_state = "wt550"
 	item_state = "arg"
 	mag_type = /obj/item/ammo_box/magazine/wt550m9
@@ -99,8 +99,8 @@
 	block_upgrade_walk = 1
 
 /obj/item/gun/ballistic/automatic/mini_uzi
-	name = "\improper Type U3 Uzi"
-	desc = "A lightweight submachine gun, for when you really want someone dead. Uses 9mm rounds."
+	name = "\improper FS 'Spitball' SAF-12"
+	desc = "A lightweight submachine gun. Has the Frozen Star logo printed on it. Uses 9mm rounds."
 	icon_state = "miniuzi"
 	mag_type = /obj/item/ammo_box/magazine/uzim9mm
 	bolt_type = BOLT_TYPE_OPEN
@@ -351,3 +351,20 @@
 	fire_rate = 2
 	block_upgrade_walk = 1
 
+// Security Rifle
+
+/obj/item/gun/ballistic/automatic/secrifle
+	name = "FS 'Liberator' PDW"
+	desc = "A bullpup assault rifle commonly used by PMCs and Security contractors. Known for being used by Nanotrasen Security officers. "
+	icon_state = "oldrifle"
+	item_state = "c20r"
+	mag_type = /obj/item/ammo_box/magazine/m556/rifle
+	bolt_type = BOLT_TYPE_STANDARD
+	mag_display = TRUE
+	empty_indicator = TRUE
+	fire_rate = 4
+	slot_flags = ITEM_SLOT_BACK
+	weapon_weight = WEAPON_HEAVY
+	w_class = WEIGHT_CLASS_HUGE
+	spawnwithmagazine = TRUE
+	fire_sound = 'sound/weapons/rifleshot.ogg'
